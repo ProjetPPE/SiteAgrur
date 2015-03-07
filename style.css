@@ -1,0 +1,84 @@
+
+/* icone de menu */
+.icon{  
+	height: 110px;
+	width: 110px;
+	border-radius: 5px;
+	margin-right: 12px;
+	margin-bottom: 12px;
+	vertical-align: middle;
+	display: inline-block;
+	background:#787878;
+}
+
+/* icone de menu */
+.icon:hover{  
+	height: 110px;
+	width: 110px;
+	border-radius: 5px;
+	margin-right: 12px;
+	margin-bottom: 12px;
+	vertical-align: middle;
+	display: inline-block;
+	background:#383838;
+}
+
+
+.nav{ 
+		text-decoration: none;
+		color: #ffffff;
+		font-Size: 150%;
+		margin-top: 10px;
+		margin: 3px;
+		
+		} 
+
+b{
+	
+	text-decoration: none;
+		color: #000000;
+		} 
+		
+/* MEDIA QUERIES */
+/* code d'adaptation taille=support */
+@media screen and (min-width: 480px) and (max-width: 1920px){ 
+   
+header{
+    text-align: center;
+	background-image:url(images/noix.jpg);
+	border-radius: 110px;
+}
+
+h1#titre{
+    text-align: center;
+}
+
+li {  
+    display: inline;  
+    list-style: none; /* nécessaire pour IE7 */  
+    padding: 10px; margin: 10px;  
+}
+	
+footer{
+    text-align: center;
+}
+
+/* login J.S */
+
+#slick-login{
+	text-align: right;
+	border-radius: 5px;
+	border-width: 2px;
+	border-style: solid;
+	background:#787878;
+}
+
+.textLog{
+	border-radius:5px;
+	
+}
+
+.blanc{
+	color: #ffffff;
+}
+
