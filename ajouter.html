@@ -17,9 +17,9 @@
 	
       <header>
 	  
-	  <form id="slick-login">
-	<label for="Username" class="blanc">Username </label><input class="textLog" type="text" name="Username" class="placeholder" placeholder="adresse@***.com">
-	<label for="Password" class="blanc">Password </label><input class="textLog" type="Password" name="Password" class="placeholder" placeholder="password">
+		<form id="slick-login">
+		<label for="Username" class="blanc">Username </label><input class="textLog" type="text" name="Username" class="placeholder" placeholder="adresse@***.com">
+		<label for="Password" class="blanc">Password </label><input class="textLog" type="Password" name="Password" class="placeholder" placeholder="password">
 		<input type="submit" value="Log In">
 			</form>
 			<br>
@@ -37,17 +37,19 @@
                 </ul>
             </nav>
       </header>
-        
 		
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<center>
-		<b>Bienvue sur la page d'ajout. </b>
-		</center>
-		<br>
+		<br/>
+		<br/>
+		<p id="formatageTitre">Ajouter une variété</p>
+		<form id="centrerForm" name="ajoutNoix" action="ajouter.php">
+			<label>Nom</label> : <input type="text" name="nomNoix" placeholder="Nom de la noix"><br/><br/>
+			<label>Description</label> : <input type="text" name="description" placeholder="Décrivez partiellement la variété"><br/><br/>
+			<label>Estampillé AOC ?<label> : <input type="radio" name="choix" value="1">Oui <input type="radio" name="choix" value="0">Non<br/><br/>
+			<input type="button" value="Envoyer">
+		</form>
+		<br/>
+		<br/>
+		<br/>
         <p></p>
         
         <footer>Agrur© 2014-2015</footer>

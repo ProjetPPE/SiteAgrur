@@ -63,6 +63,16 @@ footer{
     text-align: center;
 }
 
+#centrerForm{
+	text-align:center;
+}
+
+#formatageTitre{
+	text-align:center;
+	font-Size:30px;
+	font-weight:bold;
+}
+
 /* login J.S */
 
 #slick-login{
