@@ -16,7 +16,7 @@
 				echo "</tbody></table>";
 			}
 			else {
-				echo "aucun personnage.";
+				echo "aucun client";
 			}
 		}
 		else {

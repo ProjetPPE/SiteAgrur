@@ -29,7 +29,7 @@
             <nav id="menu">
                 <ul>    
                     <li class="icon"><a class="nav" href="index.html">Accueil</a></li> 
-                    <li class="icon"><a class="nav" href="consulter.html">Consulter</a></li>
+                    <li class="icon"><a class="nav" href="consulter.php">Consulter</a></li>
                     <li class="icon"><a class="nav" href="ajouter.html">Ajouter</a></li>
                     <li class="icon"><a class="nav" href="modifier.html">Modifier</a></li>
                     <li class="icon"><a class="nav" href="inscription.html">Inscription</a></li>
@@ -46,7 +46,7 @@
 		<br/>
 		<center>
 		<b>Bienvue sur la page de consultation.</b><br/><br/>
-		<a href="connexion.php">Cliquer pour consulter la liste de nos clients</a>
+		<?php include('connexion.php'); ?>
 		</center>
 		<br/>
         <p></p>
