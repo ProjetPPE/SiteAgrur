@@ -11,7 +11,9 @@
 			if (count($oRS->fetchAll()) > 0 ){
 				echo "<table><thead><tr><th>Client</th><th>Nom Responsable Client</th><th>Adresse Client</th></tr></thead><tbody>";
 				while($data = $oRS ->fetch()){
-					echo "<tr><td>".$data['clientNom']."</td><td>".$data['clientNomResp']."</td><td>".$data['clientAdresse']."</td></tr>";	
+					echo $data;
+					echo "coucou";
+					echo "<tr><td>".$data['clientId']."</td><td>".$data['clientNom']."</td><td>".$data['clientNomResp']."</td><td>".$data['clientAdresse']."</td></tr>";	
 				}
 				echo "</tbody></table>";
 			}
