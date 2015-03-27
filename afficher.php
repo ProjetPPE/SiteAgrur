@@ -9,9 +9,9 @@
 		$sql="select * from client";
 		if($oRS = mysqli_query($bdd,$sql)){
 			if(mysqli_num_rows($oRS) > 0 ){
-				echo "<table id='tableau'><thead><tr><th>Client</th><th>Nom Responsable Client</th><th>Adresse Client</th></tr></thead>";
+				echo "<table id='tableau'><thead><tr><th id='tableau'>Client</th><th id='tableau'>Nom Responsable Client</th><th id='tableau'>Adresse Client</th></tr></thead>";
 				while ($data = mysqli_fetch_assoc($oRS)){
-					echo "<tr><td>".$data['clientId']."</td><td>".$data['clientNom']."</td><td>".$data['clientNomResp']."</td><td>".$data['clientAdresse']."</td></tr>";
+					echo "<tr ><td id='tableau'>".$data['clientNom']."</td><td id='tableau'>".$data['clientNomResp']."</td><td id='tableau'>".$data['clientAdresse']."</td></tr>";
 				}
 				echo "</table>";
 			}
