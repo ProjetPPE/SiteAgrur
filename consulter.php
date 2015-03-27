@@ -37,20 +37,16 @@
                 </ul>
             </nav>
       </header>
-        
-		
-		<br/>
-		<br/>
-		<br/>
-		<br/>
 		<br/>
 		<center>
-		<b>Bienvue sur la page de consultation.</b><br/><br/>
-		<?php include('afficher.php'); ?>
+		<h2>Bienvue sur la page de consultation</h2>
+		<h3>Nos Clients</h3>
+			<?php include('phpConsult/afficherClients.php'); ?>
+		<h3>Nos Vergers</h3>
+			<?php include('phpConsult/afficherVergers.php'); ?>
 		</center>
 		<br/>
         <p></p>
-        
         <footer>Agrur© 2014-2015</footer>
     </body>
 </html>
