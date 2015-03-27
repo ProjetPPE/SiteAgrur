@@ -73,6 +73,11 @@ footer{
 	font-weight:bold;
 }
 
+#tableau{
+	border:1px solid black;
+	text-align:center;
+}
+
 /* login J.S */
 
 #slick-login{

@@ -46,7 +46,7 @@
 		<br/>
 		<center>
 		<b>Bienvue sur la page de consultation.</b><br/><br/>
-		<?php include('connexion.php'); ?>
+		<?php include('afficher.php'); ?>
 		</center>
 		<br/>
         <p></p>
