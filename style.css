@@ -32,12 +32,6 @@
 		margin: 3px;
 		
 		} 
-
-b{
-	
-	text-decoration: none;
-		color: #000000;
-		} 
 		
 /* MEDIA QUERIES */
 /* code d'adaptation taille-support */
@@ -95,5 +89,9 @@ footer{
 
 .blanc{
 	color: #ffffff;
+}
+
+p{
+	font-weight: bold;
 }
 

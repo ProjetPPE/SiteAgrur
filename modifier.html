@@ -19,7 +19,7 @@
 	  
 	  <form id="slick-login" action="php/connexion.php">
 	<label for="Username" class="blanc">Identifiant</label><input class="textLog" type="text" name="Username" class="placeholder" placeholder="adresse@***.com">
-	<label for="Password" class="blanc">Mot de passe </label><input class="textLog" type="Password" name="Password" class="placeholder" placeholder="Mot de passe">
+	<label for="Password" class="blanc">Mot de passe</label><input class="textLog" type="Password" name="Password" class="placeholder" placeholder="Mot de passe">
 		<input type="submit" value="Connexion">
 			</form>
 			<br>
@@ -45,25 +45,18 @@
 		<br>
 		<br>
 		<center>
-		<b>Bienvue sur la page de modification. </b>
+		<p>Bienvue sur la page de votre profil</p>
+		<p>Vous pouvez modifier vos informations si vous le souhaitez :</p>
 		<br>
 		<br>
 		
-		
-		<form name="modifier" action="modifier.php" method="POST">
-		
-	<fieldset><legend>Vos Coordonnées</legend>
-		<label>Nom de l'entreprise</label><input type="text" placeholder="Nom de l'entrerise" name="txt_nom"/><br/>
-		<label>Adresse de l'entreprise</label><input type="text" placeholder="Adresse de l'entreprise" name="txt_adresse"/><br/>
-		<label>Code Postal</label><input type="text" placeholder="Code Postal" name="txt_codePostal"/><br/>
-		<label>Ville (Fraçaise)</label><input type="text" placeholder="Ville" name="txt_ville"/><br/>
-	</fieldset>
+		<!-- <form name="inscrire" action="inscrire.php" method="POST">
 	<fieldset><legend>Votre représentant</legend>
 		<label>Nom</label><input type="text" placeholder="Nom" name="txt_nom_rep"/><br/>
 		<label>Prenom</label><input type="text" placeholder="Prenom" name ="txt_prenom_rep"/><br/>
 	</fieldset>
 	<fieldset><legend>Votre Verger</legend>
-		<label>Nom</label><br/>
+		<label>Nom</label>
 		<label>Superficie</label><br/>
 		<label>Arbres/Hectares</label><br/>
 		<label>Variete de noix</label>
@@ -75,24 +68,38 @@
 			<label>Libelle</label><input type="text" placeholder="Libelle" name="txt_libelle_com"/>
 		</fieldset>
 	</fieldset>
-</form>
+</form> -->
 
-<form name="consulter" action="consulter.php" method="POST">
+<!-- <form name="consulter" action="consulter.php" method="POST">
 	<label>Type</label>
 	<select name="slt_consulter">
 			<option value="societe">Société</option>
 			<option value="client">Client</option>
 	</select><br/>
 	<label>Nom</label><input type="text" placeholder="Nom" name="txt_consulter"/>
-</form>
+</form> -->
 
 <form name="se_connecter" action="connecter.php" method="POST">
-	<label>Identifiant</label><input type="text" placeholder="Identifiant" name="txt_identifiant"/>
-	<label>Mot de passe</label><input type="password" name="pwd_connection"/>
-	<input type="submit" value="Se connecter" name="btn_connecter"/>
+	<fieldset><legend>Votre Mot De Passe</legend>
+	<label>Ancien mot de passe</label> <input type="text" placeholder="••••••" name="pwd_oldconnection"/><br/>
+	<label>Nouveau mot de passe</label> <input type="password" placeholder="••••••" name="pwd_connection"/><br/>
+	<label>Confirmer mot de passe</label> <input type="password" placeholder="••••••" name="pwd_connection"/><br/>
+	</fieldset>
+	<fieldset><legend>Vos Coordonnées</legend>
+		<label>Nom de l'entreprise</label> <input type="text" placeholder="Nom de l'entrerise" name="txt_nom"/><br/>
+		<label>Adresse de l'entreprise</label> <input type="text" placeholder="Adresse de l'entreprise" name="txt_adresse"/><br/>
+		<label>Code Postal</label> <input type="text" placeholder="01234" name="txt_codePostal"/><br/>
+		<label>Ville</label> <input type="text" placeholder="Ville" name="txt_ville"/><br/>
+	</fieldset>
+	<fieldset><legend>Votre représentant</legend>
+	<label>Nom</label> <input type="text" placeholder="Nom" name="txt_nom_rep"/><br/>
+	<label>Prenom</label> <input type="text" placeholder="Prenom" name ="txt_prenom_rep"/><br/>
+	</fieldset>
+	<br/><br/>
+	<input type="submit" value="Inscription" name="inscrit"/>
 </form>
 
-<form name="fournir" action="fournir.php" method="POST">
+<!-- <form name="fournir" action="fournir.php" method="POST">
 	<label>Date</label><input type="date"/>
 	<label>Type de produit</label><br/>
        <input type="radio" name="rd_produit" value="prod1" id="prod1" /> <label for="prod1">prod1</label><br/>
@@ -101,14 +108,14 @@
        <input type="radio" name="rd_produit" value="prod4" id="prod4" /> <label for="prod4">prod4</label><br/>
 	<label>Quantite</label><input type="number" placeholder="Quantite" name="nmb__qtte"/><br/>
 	<input type="submit" value="Confirmer" name="btn_fournir"/>
-</form>
+</form> -->
 
-<form name="ajouterRepresentant" action="ajouterRepresentant.php" method="POST">
+<!-- <form name="ajouterRepresentant" action="ajouterRepresentant.php" method="POST">
 	<label>Nom</label><input type="text" placeholder="Nom" name="txt_nom_rep"/><br/>
 	<label>Prenom</label><input type="text" placeholder="Prenom" name ="txt_prenom_rep"/><br/>
-</form>
+</form> -->
 
-<form name="ajouterVerger" action="ajouterVerger.php" method="POST">
+<!-- <form name="ajouterVerger" action="ajouterVerger.php" method="POST">
 <label>Nom</label><br/>
 		<label>Superficie</label><br/>
 		<label>Arbres/Hectares</label><br/>
@@ -120,9 +127,9 @@
 		<fieldset><legend>Commune</legend>
 			<label>Libelle</label><input type="text" placeholder="Libelle" name="txt_libelle_com"/>
 		</fieldset>
-</form>
+</form> -->
 
-//fournir, inscire, connecter, modifier, passer une commande,
+<!-- //fournir, inscire, connecter, modifier, passer une commande, -->
 		</center>
 		<br>
         <p></p>
