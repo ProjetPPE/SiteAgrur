@@ -1,7 +1,7 @@
 
 /* icone de menu */
 .icon{  
-	height: 110px;
+	height: 50px;
 	width: 110px;
 	border-radius: 5px;
 	margin-right: 12px;
@@ -40,7 +40,7 @@ b{
 		} 
 		
 /* MEDIA QUERIES */
-/* code d'adaptation taille=support */
+/* code d'adaptation taille-support */
 @media screen and (min-width: 480px) and (max-width: 1920px){ 
    
 header{
