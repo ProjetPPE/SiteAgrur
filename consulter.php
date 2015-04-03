@@ -41,9 +41,9 @@
 		<center>
 		<h2>Bienvue sur la page de consultation</h2>
 		<h3>Nos Clients</h3>
-			<?php include('phpConsult/afficherClients.php'); ?>
+			<?php include('php/afficherClients.php'); ?>
 		<h3>Nos Vergers</h3>
-			<?php include('phpConsult/afficherVergers.php'); ?>
+			<?php include('php/afficherVergers.php'); ?>
 		</center>
 		<br/>
         <p></p>

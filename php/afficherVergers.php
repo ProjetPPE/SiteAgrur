@@ -1,6 +1,6 @@
 <?php
 	/*** Connexion BDD Agrur ***/
-	$user="admin";
+	$user="root";
 	$pwd="";
 	$host="localhost";
 	$dbname="agrur";

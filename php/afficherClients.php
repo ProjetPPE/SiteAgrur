@@ -1,6 +1,6 @@
 <?php
 	/*** Connexion BDD Agrur ***/
-	$user="admin"; //root si uWamp
+	$user="root"; //root si uWamp
 	$pwd=""; //root si uWamp
 	$host="localhost";
 	$dbname="agrur";
