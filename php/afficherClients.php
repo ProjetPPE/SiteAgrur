@@ -16,7 +16,7 @@
 				echo "</table>";
 			}
 			else {
-				echo "client.";
+				echo "Il n'y a pas de clients dans la base";
 			}
 		}
 		else {

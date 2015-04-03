@@ -1,6 +1,10 @@
-CREATE VIEW lesVergers(col1,col2,col3,col4,col5)
-AS SELECT vergerSuperficie, vergerNbArbre, prodID, varID, commuID
-FROM
+CREATE VIEW lesVergers
+AS SELECT vergerSuperficie, vergerNbArbre, prodSociete, varLibelle, communeNom
+FROM verger vergerSuperficie, verger vergerNbArbre, producteur prodID, variete varID, commune commuID
+WHERE vergerSuperficie.col1 = ver
+
+SELECT vergerSuperficie, vergerNbArbre, prodSociete, varLibelle, communeNom
+FROM verger, producteur, variete, commune
 
 
 CREATE VIEW Vue
