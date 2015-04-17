@@ -1,8 +1,9 @@
 <?php
 	include("php/fonctions.php");
-	if($bdd){
+	
+	if($bd = connecter()){
 		$sql="select * from client";
-		if($oRS = mysqli_query($bdd,$sql)){
+		if($oRS = mysqli_query($bd,$sql)){
 			if(mysqli_num_rows($oRS) > 0 ){
 				echo "<table id='tableau'><thead><tr><th id='tableau'>Client</th><th id='tableau'>Nom Du Responsable</th><th id='tableau'>Adresse Du Client</th></tr></thead>";
 				while ($data = mysqli_fetch_assoc($oRS)){
@@ -20,5 +21,5 @@
 	}
 	$sSQL = "";
 	$oRS = NULL;
-	mysqli_close($bdd);
+	quitter($bd);
 ?>
