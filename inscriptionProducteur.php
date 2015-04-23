@@ -42,7 +42,7 @@
 			</form>
 		</center>
 
-<!-- //fournir, inscire, connecter, modifier, passer une commande, -->
+<!-- //fournir, inscire, connecter, modifier -->
 		<br>
         <p></p>
         
