@@ -1,9 +1,7 @@
 <?php
 	/*** Connexion BDD Agrur ***/
-	$user="root";
-	$pwd="root";
-	$host="localhost";
-	$dbname="agrur";
+	include("php/fonctions.php");
+	connexion();
 	
 	if(isset($_POST['bouton_inscription'])){
 		$user=$_POST['txt_identifiant'];

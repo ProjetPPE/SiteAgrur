@@ -1,5 +1,5 @@
 <?php
-	include("php/fonctions.php");
+	include_once("php/fonctions.php"); //include_once permet d'inclure une seule fois le fichier (évite le fatal error de php5)
 	
 	if($bd = connecter()){
 		$sql="select * from client";

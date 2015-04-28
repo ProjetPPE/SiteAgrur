@@ -1,13 +1,9 @@
 <?php
-	/*** Connexion BDD Agrur ***/
-	$user="root";
-	$pwd="root";
-	$host="localhost";
-	$dbname="agrur";
-	$bdd = mysqli_connect ($host,$user,$pwd,$dbname) or die("Erreur de connexion à la base de données :".mysqli_error($link));
-	if($bdd){
+	include_once("php/fonctions.php"); //include_once permet d'inclure une seule fois le fichier (évite le fatal error de php5)
+	
+	if($bd = connecter()){
 		$sql="select * from verger";
-		if($oRS = mysqli_query($bdd,$sql)){
+		if($oRS = mysqli_query($bd,$sql)){
 			if(mysqli_num_rows($oRS) > 0 ){
 				echo "<table id='tableau'><thead><tr><th id='tableau'>Superficie du Verger</th><th id='tableau'>Nombre d'arbres</th><th id='tableau'>Producteur</th><th id='tableau'>Variété du verger</th><th id='tableau'>Commune</th></tr></thead>";
 				while ($data = mysqli_fetch_assoc($oRS)){
@@ -16,7 +12,7 @@
 				echo "</table>";
 			}
 			else {
-				echo "client.";
+				echo "Il n'y a pas de vergers dans la base";
 			}
 		}
 		else {
@@ -26,5 +22,5 @@
 	
 	$sSQL = "";
 	$oRS = NULL;
-	mysqli_close($bdd);
+	quitter($bd);
 ?>
