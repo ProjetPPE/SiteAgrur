@@ -1,10 +1,10 @@
 
 <header>
-	<form id="slick-login" action="php/connexion.php">
+	<!--<form id="slick-login" action="php/connexion.php">
 		<label for="Username" class="blanc">Identifiant</label><input class="textLog" type="text" name="Username" class="placeholder" placeholder="adresse@***.com">
 		<label for="Password" class="blanc">Mot de passe</label><input class="textLog" type="Password" name="Password" class="placeholder" placeholder="Mot de passe">
 		<input type="submit" value="Connexion">
-	</form>
+	</form>-->
 <br/>
 <br/>
 <img src="images/logo-noix.jpg"/>
