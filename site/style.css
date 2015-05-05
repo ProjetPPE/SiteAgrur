@@ -2,7 +2,7 @@
 /* icone de menu */
 .icon{  
 	height: 50px;
-	width: 110px;
+	width: 130px;
 	border-radius: 5px;
 	margin-right: 12px;
 	margin-bottom: 12px;
@@ -13,8 +13,8 @@
 
 /* icone de menu */
 .icon:hover{  
-	height: 110px;
-	width: 110px;
+	height: 50px;
+	width: 130px;
 	border-radius: 5px;
 	margin-right: 12px;
 	margin-bottom: 12px;
@@ -68,6 +68,11 @@ footer{
 }
 
 #tableau{
+	border:1px solid black;
+	text-align:center;
+}
+
+#tableauInfo{
 	border:1px solid black;
 	text-align:center;
 }

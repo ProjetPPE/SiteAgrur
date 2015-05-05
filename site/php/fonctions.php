@@ -13,4 +13,13 @@ function connecter(){
 function quitter($laCo){
 	mysqli_close($laCo);
 }
+
+function supprimerSession(){
+	session_destroy();
+}
+
+function recupId(){
+	$idProd=$_SESSION['idProd'];
+	return $idProd;
+}
 ?>
